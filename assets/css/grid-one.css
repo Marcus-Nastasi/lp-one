@@ -1,0 +1,33 @@
+
+.grid-one-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+#grid-one h2 {
+    padding-top: 7rem;
+    padding-bottom: 4.5rem;
+}
+
+#grid-one h3 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+#grid-one h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    padding-right: 4rem;
+    font-size: 8rem;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 10rem) and (max-width: 70rem) {
+    .grid-one-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

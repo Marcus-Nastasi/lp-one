@@ -1,0 +1,30 @@
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    gap: var(--gap);
+}
+
+table thead, table tfoot {
+    background-color: var(--light-gray-color);
+}
+
+table caption {
+    padding-bottom: 0.8rem;
+    caption-side: top;
+    text-align: left;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+

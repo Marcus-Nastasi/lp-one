@@ -1,0 +1,99 @@
+
+/* Sessão Intro  */
+
+#content-bem-vindo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-text {
+    max-width: 45rem;
+    margin-left: 18rem;
+    padding-top: 23rem;
+}
+
+.intro-text p {
+    margin-top: 3rem;
+    line-height: 3.5rem;
+}
+
+.intro-text h2 {
+    text-transform: uppercase;
+} 
+
+.intro-img {
+    max-width: 70rem;
+}
+
+.intro-img img {
+    max-width: 66rem;
+    max-height: auto;
+    padding-top: 15rem;
+    padding-left: 7rem;
+}
+
+@media (min-width: 1370px) and (max-width: 10000px) {
+    #content-bem-vindo {
+        display: flex;
+        justify-content: center;
+        margin-left: -25rem;
+    }
+
+}
+
+@media (min-width: 1368px) and (max-width: 1370px) {
+    #content-bem-vindo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-img {
+        align-self: auto;
+        padding-top: -20rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 1368px) {
+    #content-bem-vindo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-img img {
+        max-width: 30rem;
+        max-height: auto;
+        padding-top: 15rem;
+        padding-left: 7rem;
+    }
+
+    .intro-text {
+        max-width: 45rem;
+        margin-left: 2rem;
+        padding-top: 15rem;
+    }
+    
+}
+
+@media (min-width: 150px) and (max-width: 400px) {
+    #content-bem-vindo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-img img {
+        max-width: 22rem;
+        max-height: auto;
+        padding-top: 2rem;
+        padding-left: 7rem;
+    }
+
+    .intro-text {
+        max-width: 45rem;
+        margin-left: 2rem;
+        padding-top: 15rem;
+    }
+    
+}
+
+
+

@@ -1,0 +1,33 @@
+
+#footer section {
+    background: var(--my-gradient);
+    text-align: center;
+    height: 15vh;
+    padding-top: 7rem;
+}
+
+a:link.back-to-top, a:visited.back-to-top {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.back-to-top {
+    font-size: 4rem;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    background: var(--white);
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.back-to-top:hover, a.back-to-top:hover {
+    align-items: flex-end;
+    padding-bottom: 2rem;
+}

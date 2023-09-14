@@ -1,0 +1,91 @@
+
+/* Menu config | Logo e Navegação */
+
+.menu {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 2;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 3rem;
+}
+
+.menu h1 a {
+    color: var(--primary-color);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li a {
+    display: block;
+    color: var(--primary-color);
+    padding: 1.9rem;
+}
+
+.menu ul li a:hover {
+    color: #d86b34;
+    transition: all 150ms ease-in-out;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        bottom: 0;
+        display: none;
+    }
+    
+    .menu-content, 
+    .menu-content ul {
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .menu-content {
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+    }
+
+    .close-label::after {
+        position: fixed;
+        content: '☰';
+        font-size: 5.7rem;
+        color: #d86b34;
+        top: 2rem;
+        right: 2.5rem;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-label::after {
+        content: 'x ';
+    }
+
+}
+
+
+ 

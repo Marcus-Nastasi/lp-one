@@ -1,0 +1,12 @@
+
+/* Variáveis Globais */
+
+:root {
+    --primary-color: #0A1128;
+    --white: #ffffff;
+    --light-gray-color: #EEEEEE;
+    --gap: 3rem;
+    --top-gradient: #ffa500;
+    --bottom-gradient: #ffe645;
+    --my-gradient: linear-gradient(var(--top-gradient), var(--bottom-gradient));
+}
